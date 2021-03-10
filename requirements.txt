@@ -1,0 +1,4 @@
+requests>=2.25.1
+python_dotenv>=1.15.0
+playsound>=1.2.2
+selenium>=3.141.0

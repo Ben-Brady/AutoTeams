@@ -1,0 +1,5 @@
+{
+    "URL"   : "https://teams.microsoft.com/_?culture=en-ie&country=IE&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/pre-join-calling/19:ce7423225ac54a099a38fedac31ab34c@thread.tacv2",
+    "UnitXP": "/html/body/div[2]/div[2]/div[1]/div/left-rail/div/div/school-app-left-rail/channel-list/div/div[1]/ul/li[2]/ul/li[2]/div/div/ul/ng-include/li[{}]/a/div[1]/span",
+    "JoinXP": "/html/body/div[1]/div[2]/div[2]/div[1]/middle-messages-stripe/div/messages-header/div[2]/div/message-pane/div/div[1]/div/div/message-list/div/virtual-repeat/div/div[8]/div/thread/div/div[2]/calling-thread-header/div/calling-join-button/button"
+}
