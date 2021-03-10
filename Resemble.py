@@ -28,7 +28,7 @@ def GenerateClip(Text:str):
         # ----------- Setup Headers ---------- #
         ProjectID = getenv('RPROID')
         Auth    = {"Authorization"   : "Token token={}".format(getenv("RTOKEN"))}
-        Header  = {"Content-Type"    : "applic#ation/json","Authorization"   : "Token token={}".format(getenv("RTOKEN"))}
+        Header  = {"Content-Type"    : "application/json","Authorization"   : "Token token={}".format(getenv("RTOKEN"))}
         Data    = {
             "data": {
                 "title" : Text,
@@ -36,7 +36,7 @@ def GenerateClip(Text:str):
                 "voice" : getenv('RVOICE')
                 },
             "precision"     : "PCM_16"}
-        print(Data)
+
         URL     = f'https://app.resemble.ai/api/v1/projects/{ProjectID}/clips'
 
         x = requests.post(URL,headers=Header,json=Data)
@@ -62,8 +62,3 @@ def GenerateClip(Text:str):
             file.write(x.content)
     #Update the list of already produced statements
     UpdateCache()
-
-if __name__ == '__main__':
-    from playsound import playsound
-    GenerateClip(input('Text: '))
-    playsound('audio.wav')
